@@ -1,0 +1,20 @@
+.nav {
+  a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+
+    &:hover {
+      color: silver;
+      font-size: 25px;
+      -webkit-transition: .2s ease-out;
+      -webkit-transition-delay: 0.5s;
+      -o-transition: .2s ease-out;
+      -o-transition-delay: 0.5s;
+      -moz-transition: .2s ease-out;
+      -moz-transition-delay: 0.5s;
+      transition: .2s ease-out;
+      transition-delay: 0.5s;
+    }
+  }
+}

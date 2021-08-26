@@ -1,0 +1,9 @@
+<div>
+  <pagination-controls (pageChange)="navigateTo($event)"></pagination-controls>
+</div>
+<div>
+  <app-game *ngFor="let game of games | paginate: { itemsPerPage: 20, currentPage: page, totalItems:598218}" [game]="game"></app-game>
+</div>
+<div>
+  <pagination-controls (pageChange)="navigateTo($event)"></pagination-controls>
+</div>
