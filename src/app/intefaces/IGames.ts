@@ -1,3 +1,14 @@
+export interface IPlatforms {
+  platform:{ "id": number,
+    "name": string,
+    "slug": string,
+    "image": null,
+    "year_end": null,
+    "year_start": number,
+    "games_count": number,
+    "image_background": string
+  }
+}
 export interface IGames {
   id:number,
   slug:string,
@@ -7,6 +18,8 @@ export interface IGames {
   tba:boolean,
   rating:number,
   rating_top:number,
+  // platforms:IPlatforms[]
+  platforms: [IPlatforms]
 
 }
 export interface IGamesFull {
@@ -18,3 +31,4 @@ export interface IGamesFull {
 // export interface IPoster {
 //   background_image:string
 // }
+

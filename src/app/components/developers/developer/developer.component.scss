@@ -1,0 +1,18 @@
+.developer-list{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 450px;
+  margin: 25px;
+  padding: 10px;
+
+  border: 2px dashed white;
+  border-radius: 10px ;
+  img{
+    width: 350px;
+    border-radius: 10px;
+  }
+}

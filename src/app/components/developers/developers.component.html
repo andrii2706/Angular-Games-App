@@ -1,0 +1,12 @@
+<div>
+  <div class="pagination">
+    <pagination-controls (pageChange)="navigateTo($event)"></pagination-controls>
+  </div>
+  <div class="developers-list">
+    <app-developer *ngFor="let developer of developers | paginate:
+    { itemsPerPage: 20, currentPage: page, totalItems:283368}"[developer]="developer"></app-developer>
+  </div>
+  <div class="pagination">
+    <pagination-controls (pageChange)="navigateTo($event)"></pagination-controls>
+  </div>
+</div>

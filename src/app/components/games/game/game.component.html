@@ -1,5 +1,18 @@
-
-<div>
-  <img src="{{game.background_image}}"  alt="Game Poster">
-  <h3>{{game.name}}</h3>
-</div>
+<div class="game-poster">
+    <img src="{{game.background_image}}" alt="Game Poster">
+    <div class="game-info">
+      <h3>{{game.name}}</h3>
+      <h4>{{game.released}}</h4></div>
+    <ul>
+      <li>Rating - {{game.rating}}</li>
+      <li>Rating - {{game.rating_top}}</li>
+    </ul>
+    <div class="console-icons">
+      <a href="https://www.xbox.com/ru-RU/"><i class="fab fa-xbox"></i></a>
+      <a href="https://www.playstation.com/uk-ua/"><i class="fab fa-playstation"></i></a>
+      <a href="#"><i class="fas fa-laptop"></i></a>
+      <a href="#"><i class="fas fa-desktop"></i></a>
+    </div>
+    <div *ngFor="let item of game.platforms" >
+      <p>{{item.platform.name}}</p></div>
+  </div>

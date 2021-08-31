@@ -12,8 +12,9 @@ import { WrapComponent } from './components/wrap/wrap.component';
 import { UserComponent } from './components/user/user.component'
 import {RouterModule} from "@angular/router";
 import {routes} from "./routes/basic-routes";
-import { HomeComponent } from './components/homes/home/home.component';
 import { HomesComponent } from './components/homes/homes.component';
+import { DevelopersComponent } from './components/developers/developers.component';
+import { DeveloperComponent } from './components/developers/developer/developer.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,9 @@ import { HomesComponent } from './components/homes/homes.component';
     GameComponent,
     WrapComponent,
     UserComponent,
-    HomeComponent,
-    HomesComponent
+    HomesComponent,
+    DevelopersComponent,
+    DeveloperComponent
   ],
     imports: [
         BrowserModule,
