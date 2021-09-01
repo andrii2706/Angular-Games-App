@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wrap.component.scss']
 })
 export class WrapComponent implements OnInit {
-
-
-
   constructor() { }
 
   ngOnInit(): void {

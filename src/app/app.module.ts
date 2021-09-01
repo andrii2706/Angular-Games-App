@@ -15,8 +15,10 @@ import {routes} from "./routes/basic-routes";
 import { HomesComponent } from './components/homes/homes.component';
 import { DevelopersComponent } from './components/developers/developers.component';
 import { DeveloperComponent } from './components/developers/developer/developer.component';
-import { PlatformsComponent } from './components/platforms/platforms.component';
-import { PlatformComponent } from './components/platforms/platform/platform.component';
+import { PlatFormsComponent } from './components/plat-forms/plat-forms.component';
+import { PlatFormComponent } from './components/plat-forms/plat-form/plat-form.component';
+import { StoresComponent } from './components/stores/stores.component';
+import { StoreComponent } from './components/stores/store/store.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +30,10 @@ import { PlatformComponent } from './components/platforms/platform/platform.comp
     HomesComponent,
     DevelopersComponent,
     DeveloperComponent,
-    PlatformsComponent,
-    PlatformComponent
+    PlatFormsComponent,
+    PlatFormComponent,
+    StoresComponent,
+    StoreComponent
   ],
     imports: [
         BrowserModule,

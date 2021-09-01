@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <pagination-controls class="my-pagination" (pageChange)="navigateTo($event)"></pagination-controls>
+  </div>
+  <div>
+    <app-plat-form *ngFor="let platform of platforms | paginate: { itemsPerPage: 30, currentPage: page, totalItems:51}" [platfrom]="platform"></app-plat-form>
+  </div>
+  <div>
+    <pagination-controls class="my-pagination" (pageChange)="navigateTo($event)"></pagination-controls>
+  </div>
+</div>
