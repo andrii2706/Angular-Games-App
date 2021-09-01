@@ -15,6 +15,8 @@ import {routes} from "./routes/basic-routes";
 import { HomesComponent } from './components/homes/homes.component';
 import { DevelopersComponent } from './components/developers/developers.component';
 import { DeveloperComponent } from './components/developers/developer/developer.component';
+import { PlatformsComponent } from './components/platforms/platforms.component';
+import { PlatformComponent } from './components/platforms/platform/platform.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DeveloperComponent } from './components/developers/developer/developer.
     UserComponent,
     HomesComponent,
     DevelopersComponent,
-    DeveloperComponent
+    DeveloperComponent,
+    PlatformsComponent,
+    PlatformComponent
   ],
     imports: [
         BrowserModule,
