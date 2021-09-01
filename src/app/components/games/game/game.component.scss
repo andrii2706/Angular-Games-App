@@ -5,11 +5,13 @@
   align-items: center;
 
   width: 450px;
+  min-height: 750px;
   margin: 25px;
   padding: 20px;
 
   border: 2px solid black;
   border-radius: 15px;
+  box-shadow:4px 3px 8px 7px rgb(200 152 44) ;
   img {
     width: 350px;
     border-radius: 15px;
