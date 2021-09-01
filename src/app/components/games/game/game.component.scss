@@ -4,9 +4,10 @@
   justify-content: center;
   align-items: center;
 
-  width: 450px;
-  min-height: 750px;
   margin: 25px;
+
+  width: 450px;
+  min-height: 850px;
   padding: 20px;
 
   background: #414695;
@@ -17,6 +18,7 @@
   }
   img {
     width: 350px;
+    height: 200px;
     border-radius: 15px;
   }
   a{
@@ -26,7 +28,6 @@
   }
   }
 }
-
 .console-icons{
   font-size: 25px;
   margin: 15px;
@@ -44,3 +45,4 @@
     margin-top: 20px;
   }
 }
+
