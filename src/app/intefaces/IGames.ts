@@ -84,3 +84,11 @@ export interface IGameDatails {
     "21": number
   },
 }
+export interface IScreenShots {
+  id:number,
+  image:string
+}
+export interface IScreenShotsFull {
+  count: number,
+  results:IScreenShots[]
+}

@@ -17,7 +17,6 @@ export class GameDetailsComponent implements OnInit {
     private gamesService:GamesService
   ) {
    this.activatedRoute.params.subscribe(({id})=>{
-     console.log(id);
      this.gamesService.getById(id).subscribe(value => this.game = value)
    })
   }
