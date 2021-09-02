@@ -15,4 +15,8 @@
     </div>
     <div *ngFor="let item of game.platforms" >
       <p>{{item.platform.name}}</p></div>
+  <div>
+    <button (click)="showGames()">More</button>
   </div>
+  </div>
+<router-outlet></router-outlet>

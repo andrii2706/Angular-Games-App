@@ -1,0 +1,14 @@
+<div class="detailed-info relative">
+   <h1>{{game.name}}</h1>
+  <img src="{{game.background_image}}" alt="Game Poster">
+  <div class="position-absolute"><h2>{{game.metacritic}}</h2></div>
+  <p>{{game.description}}</p>
+  <div *ngFor="let metacritic_platform of game.metacritic_platforms">
+      <ul>
+        <li>{{metacritic_platform.platform.name}}</li>
+        <li>{{metacritic_platform.metascore}}</li>
+        <li><a href="{{metacritic_platform.url}}">To Developers Website</a></li>
+      </ul>
+  </div>
+</div>
+

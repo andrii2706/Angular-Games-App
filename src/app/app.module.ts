@@ -19,6 +19,7 @@ import { PlatFormsComponent } from './components/plat-forms/plat-forms.component
 import { PlatFormComponent } from './components/plat-forms/plat-form/plat-form.component';
 import { StoresComponent } from './components/stores/stores.component';
 import { StoreComponent } from './components/stores/store/store.component';
+import { GameDetailsComponent } from './components/games/game/game-details/game-details.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { StoreComponent } from './components/stores/store/store.component';
     PlatFormsComponent,
     PlatFormComponent,
     StoresComponent,
-    StoreComponent
+    StoreComponent,
+    GameDetailsComponent
   ],
     imports: [
         BrowserModule,
