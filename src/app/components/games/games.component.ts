@@ -29,4 +29,7 @@ export class GamesComponent implements OnInit {
   this.page = Newpage
     this.getGames(Newpage)
   }
+  thisFilter():void{
+
+  }
 }
