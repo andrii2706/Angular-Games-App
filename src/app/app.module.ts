@@ -20,6 +20,7 @@ import { PlatFormComponent } from './components/plat-forms/plat-form/plat-form.c
 import { StoresComponent } from './components/stores/stores.component';
 import { StoreComponent } from './components/stores/store/store.component';
 import { GameDetailsComponent } from './components/games/game/game-details/game-details.component';
+import { PlatformGamesComponent } from './components/plat-forms/plat-form/platform-games/platform-games.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GameDetailsComponent } from './components/games/game/game-details/game-
     PlatFormComponent,
     StoresComponent,
     StoreComponent,
-    GameDetailsComponent
+    GameDetailsComponent,
+    PlatformGamesComponent
   ],
     imports: [
         BrowserModule,

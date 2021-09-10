@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {IPlatfomrFull} from "../intefaces/IPlatforms";
+import {IPlatfomrFull, IPlatforms} from "../intefaces/IPlatforms";
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +15,8 @@ export class PlatformsService {
   ) { }
   getPagination(Newpage:number):Observable<IPlatfomrFull>{
     return this.httpClient.get<IPlatfomrFull>(this.basicUrl + `&page=${Newpage}`)
+  }
+  getGamesForPlatform(): Observable<IPlatforms[]>{
+    return this.httpClient.get<IPlatforms[]>(this.basicUrl)
   }
 }

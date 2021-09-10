@@ -10,7 +10,9 @@ export  let routes :Routes = [
   {path:'', component:HomesComponent},
   {path:'games', component:GamesComponent},
   {path:'developers', component:DevelopersComponent},
-  {path:'platforms', component:PlatFormsComponent},
+  {path:'platforms', component:PlatFormsComponent , children:[
+      {path:'platGames/:id', component:PlatFormsComponent}
+    ]},
   {path:'stores', component:StoresComponent},
   {path:'games/:id', component:GameDetailsComponent}
 

@@ -7,8 +7,15 @@ export interface IPlatforms{
   "image": null,
   "year_start": null,
   "year_end": null,
+  "games":[IGamesOnPlatform]
 }
 export interface IPlatfomrFull {
   count:number,
   results:IPlatforms[]
+}
+export interface IGamesOnPlatform{
+  id:number,
+  slug:string,
+  name: string,
+  added: number
 }
