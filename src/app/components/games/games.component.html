@@ -2,8 +2,8 @@
   <div class="pagination">
     <pagination-controls (pageChange)="navigateTo($event)"></pagination-controls>
   </div>
-  <div class="list-of-games" >
-    <app-game *ngFor="let game of games | paginate: { itemsPerPage: 20, currentPage: page, totalItems:598218}"
+  <div class="list-of-games" *ngIf="totalGames" >
+    <app-game *ngFor="let game of games | paginate: { itemsPerPage: 20, currentPage: page, totalItems:totalGames.count}"
               [game]="game"></app-game>
   </div>
   <div class="pagination">

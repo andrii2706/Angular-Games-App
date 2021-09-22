@@ -19,13 +19,16 @@ export class GamesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getGames(1)
+    this.getTotalCount()
     // this.service.getAll().subscribe(value => {this.games = value.results})
   }
 
   getGames(Newpage:number):void{
     this.service.getPagination(Newpage).subscribe(value => {this.games =value.results})
   }
-
+  getTotalCount():void{
+    this.service.getAll().subscribe(value => this.totalGames = value)
+  }
   navigateTo(Newpage: number) {
   this.page = Newpage
     this.getGames(Newpage)
