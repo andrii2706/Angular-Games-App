@@ -10,7 +10,7 @@
   min-height: 850px;
   padding: 20px;
 
-  background: #414695;
+  background: #161a3d;
 
   border-radius: 15px;
   &:hover{
@@ -27,6 +27,14 @@
     color: #9090ff;
   }
   }
+  li{
+    list-style: none;
+    font-size: 20px;
+  }
+}
+.stars{
+  font-size: 20px;
+  color: gold;
 }
 .console-icons{
   font-size: 25px;
@@ -45,4 +53,11 @@
     margin-top: 20px;
   }
 }
+.button{
+  color: white;
 
+  background: #9090ff;
+  &:hover{
+    background: #414695;
+  }
+}

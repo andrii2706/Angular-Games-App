@@ -1,13 +1,45 @@
-.detailed-info{
+.detailed-info {
   margin: 25px;
   padding: 15px;
-  background: #9090ff;
+  background: #161728;
   border-radius: 15px;
-  img{
+
+  img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 450px;
     border-radius: 15px;
   }
-  p{
-    margin-top: 25px;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+}
+.list-of-ratings{
+  li{
+    list-style: none;
+  }
+}
+  .position {
+  top: 340px;
+  left: 450px;
+
+  h4 {
+    font-size: 25px;
+    border: 3px solid #414695;
+
+    background: #161728;
+    padding: 10px;
+    border-radius: 50%;
+  }
+}
+
+.text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 25px;
 }

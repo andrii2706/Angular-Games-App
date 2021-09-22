@@ -2,10 +2,12 @@
   <div class="detailed-info relative">
     <h1>{{game.name}}</h1>
     <img src="{{game.background_image}}" alt="Game Poster">
-    <div class="position-absolute"><h2>{{game.metacritic}}</h2></div>
-    <div #description></div>
+    <div class="position-absolute position"><h4>{{game.metacritic}}</h4></div>
+    <div class="text">
+      <div #description></div>
+    </div>
   </div>
-  <div *ngFor="let metacritic_platform of game.metacritic_platforms">
+  <div *ngFor="let metacritic_platform of game.metacritic_platforms" class="list-of-ratings">
     <ul>
       <li>{{metacritic_platform.platform.name}}</li>
       <li>{{metacritic_platform.metascore}}</li>
@@ -14,7 +16,7 @@
   </div>
   <div>
     <h2>Games ScreenShots</h2>
-<!--    <img src="{{}}" alt="">-->
+    <app-screen-shot></app-screen-shot>
   </div>
   <div>
     <button (click)="backToGames()">Back to Games</button>

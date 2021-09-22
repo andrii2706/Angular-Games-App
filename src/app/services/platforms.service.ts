@@ -13,6 +13,9 @@ export class PlatformsService {
   constructor(
     private httpClient:HttpClient
   ) { }
+  gatTotalItems():Observable<IPlatfomrFull>{
+    return this.httpClient.get<IPlatfomrFull>(this.basicUrl)
+  }
   getPagination(Newpage:number):Observable<IPlatfomrFull>{
     return this.httpClient.get<IPlatfomrFull>(this.basicUrl + `&page=${Newpage}`)
   }

@@ -4,8 +4,8 @@
       <h3>{{game.name}}</h3>
       <h4>{{game.released}}</h4></div>
     <ul>
-      <li>Rating - <ngb-rating [rate]="game.rating"></ngb-rating></li>
-      <li>Rating Top - <ngb-rating [rate]="game.rating_top"></ngb-rating></li>
+      <li>Rating - <ngb-rating class="stars" [rate]="game.rating"></ngb-rating></li>
+      <li>Rating Top - <ngb-rating class="stars" [rate]="game.rating_top"></ngb-rating></li>
     </ul>
     <div class="console-icons">
       <a href="https://www.xbox.com/ru-RU/"><i class="fab fa-xbox"></i></a>
@@ -16,7 +16,7 @@
     <div *ngFor="let item of game.platforms" >
       <p>{{item.platform.name}}</p></div>
   <div>
-    <button (click)="showGames()">More</button>
+    <button class="btn button"  (click)="showGames()">More</button>
   </div>
   </div>
 <router-outlet></router-outlet>

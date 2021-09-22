@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {IPlatforms} from "../../intefaces/IPlatforms";
+import {IPlatfomrFull, IPlatforms} from "../../intefaces/IPlatforms";
 import {PlatformsService} from "../../services/platforms.service";
 
 @Component({
@@ -8,6 +8,7 @@ import {PlatformsService} from "../../services/platforms.service";
   styleUrls: ['./plat-forms.component.scss']
 })
 export class PlatFormsComponent implements OnInit {
+  totalCount: IPlatfomrFull
   page:number
   platforms:IPlatforms[]
 
@@ -17,6 +18,10 @@ export class PlatFormsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getPlatforms(1)
+    this.getTotalCount()
+  }
+  getTotalCount():void{
+    this.platformsService.gatTotalItems().subscribe(value => this.totalCount = value)
   }
   getPlatforms(Newpage:number):void{
     this.platformsService.getPagination(Newpage).subscribe(value =>

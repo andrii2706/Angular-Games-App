@@ -1,30 +1,32 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GamesComponent } from './components/games/games.component';
-import { GameComponent } from './components/games/game/game.component';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {GamesComponent} from './components/games/games.component';
+import {GameComponent} from './components/games/game/game.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { WrapComponent } from './components/wrap/wrap.component';
-import { UserComponent } from './components/user/user.component'
+import {WrapComponent} from './components/wrap/wrap.component';
+import {UserComponent} from './components/user/user.component'
 import {RouterModule} from "@angular/router";
 import {routes} from "./routes/basic-routes";
-import { HomesComponent } from './components/homes/homes.component';
-import { DevelopersComponent } from './components/developers/developers.component';
-import { DeveloperComponent } from './components/developers/developer/developer.component';
-import { PlatFormsComponent } from './components/plat-forms/plat-forms.component';
-import { PlatFormComponent } from './components/plat-forms/plat-form/plat-form.component';
-import { StoresComponent } from './components/stores/stores.component';
-import { StoreComponent } from './components/stores/store/store.component';
-import { GameDetailsComponent } from './components/games/game/game-details/game-details.component';
-import { LoginComponent } from './components/homes/login/login.component';
-import { RegistrationComponent } from './components/homes/registration/registration.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import {HomesComponent} from './components/homes/homes.component';
+import {DevelopersComponent} from './components/developers/developers.component';
+import {DeveloperComponent} from './components/developers/developer/developer.component';
+import {PlatFormsComponent} from './components/plat-forms/plat-forms.component';
+import {PlatFormComponent} from './components/plat-forms/plat-form/plat-form.component';
+import {StoresComponent} from './components/stores/stores.component';
+import {StoreComponent} from './components/stores/store/store.component';
+import {GameDetailsComponent} from './components/games/game/game-details/game-details.component';
+import {LoginComponent} from './components/homes/login/login.component';
+import {RegistrationComponent} from './components/homes/registration/registration.component';
+import {ProfileComponent} from './components/profile/profile.component';
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatDialog} from "@angular/material/dialog";
+import { ScreenShotsComponent } from './components/games/game/game-details/screen-shots/screen-shots.component';
+import { ScreenShotComponent } from './components/games/game/game-details/screen-shots/screen-shot/screen-shot.component';
 
 @NgModule({
   declarations: [
@@ -44,20 +46,23 @@ import {MatDialog} from "@angular/material/dialog";
     LoginComponent,
     RegistrationComponent,
     ProfileComponent,
+    ScreenShotsComponent,
+    ScreenShotComponent,
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        NgbModule,
-        NgxPaginationModule,
-        RouterModule.forRoot(routes),
-        MatProgressSpinnerModule,
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    NgbModule,
+    NgxPaginationModule,
+    RouterModule.forRoot(routes),
+    MatProgressSpinnerModule,
 
-    ],
+  ],
   providers: [HttpClient,
     MatDialog
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
