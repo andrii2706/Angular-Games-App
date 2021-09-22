@@ -9,6 +9,7 @@ import {GamesService} from "../../services/games.service";
 })
 export class GamesComponent implements OnInit {
 
+  totalGames: IGamesFull
   games:IGames[]
   page:number
   // gAmes:IGamesFull

@@ -20,7 +20,11 @@ import { PlatFormComponent } from './components/plat-forms/plat-form/plat-form.c
 import { StoresComponent } from './components/stores/stores.component';
 import { StoreComponent } from './components/stores/store/store.component';
 import { GameDetailsComponent } from './components/games/game/game-details/game-details.component';
-import { PlatformGamesComponent } from './components/plat-forms/plat-form/platform-games/platform-games.component';
+import { LoginComponent } from './components/homes/login/login.component';
+import { RegistrationComponent } from './components/homes/registration/registration.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatDialog} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -37,7 +41,9 @@ import { PlatformGamesComponent } from './components/plat-forms/plat-form/platfo
     StoresComponent,
     StoreComponent,
     GameDetailsComponent,
-    PlatformGamesComponent
+    LoginComponent,
+    RegistrationComponent,
+    ProfileComponent,
   ],
     imports: [
         BrowserModule,
@@ -45,9 +51,13 @@ import { PlatformGamesComponent } from './components/plat-forms/plat-form/platfo
         HttpClientModule,
         NgbModule,
         NgxPaginationModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes),
+        MatProgressSpinnerModule,
+
     ],
-  providers: [HttpClient],
+  providers: [HttpClient,
+    MatDialog
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

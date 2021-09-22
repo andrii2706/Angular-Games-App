@@ -20,3 +20,4 @@ export class PlatformsService {
     return this.httpClient.get<IPlatforms[]>(this.basicUrl)
   }
 }
+

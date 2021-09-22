@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {IGames, IGamesFull} from "../../../intefaces/IGames";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NgbRatingConfig} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-game',
@@ -13,8 +14,12 @@ export class GameComponent implements OnInit {
   game:IGames
   constructor(
     private router:Router,
-    private activatedRoute:ActivatedRoute
-  ) { }
+    private activatedRoute:ActivatedRoute,
+    config: NgbRatingConfig
+  ) {
+    config.max = 5;
+    config.readonly = true;
+  }
 
   ngOnInit(): void {
   }

@@ -3,5 +3,12 @@
   justify-content: center;
   flex-wrap: wrap;
 
+  height: 2000vh;
+
   margin: 25px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
